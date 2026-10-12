@@ -1,0 +1,13 @@
+/* App-level additions on top of tensile.css (which stays exactly as exported from the design). */
+html,
+body {
+  min-height: 100%;
+}
+#root {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+#root > .t-app {
+  flex: 1;
+}

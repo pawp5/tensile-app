@@ -1,0 +1,19 @@
+body{margin:0;background:#011616}
+@keyframes fm-dash{to{stroke-dashoffset:-28}}
+@keyframes fm-dash-rev{to{stroke-dashoffset:28}}
+@keyframes fm-halo{0%,100%{opacity:.2}50%{opacity:.55}}
+.fm-flow{stroke-dasharray:3 5;animation:fm-dash 1.8s linear infinite}
+.fm-flow-rev{stroke-dasharray:3 5;animation:fm-dash-rev 1.8s linear infinite}
+.fm-halo{animation:fm-halo 3.2s ease-in-out infinite}
+.fm-glass{background:linear-gradient(170deg,rgba(215,252,253,.10) 0%,rgba(215,252,253,.035) 45%,rgba(215,252,253,.015) 100%),rgba(8,40,42,.46);-webkit-backdrop-filter:blur(22px) saturate(140%);backdrop-filter:blur(22px) saturate(140%);box-shadow:inset 0 1px 0 rgba(240,255,255,.16),inset 0 0 0 1px rgba(215,252,253,.07),0 30px 70px -36px rgba(0,0,0,.7),0 24px 70px -34px rgba(110,225,225,.28)}
+.fm-layer{position:absolute;inset:0}
+.fm-node{display:flex;flex-direction:column;gap:4px;padding:16px 20px;border-radius:18px;transition:background .5s ease,box-shadow .5s ease,opacity .5s ease}
+.fm-on{background:linear-gradient(180deg,rgba(215,252,253,.13),rgba(215,252,253,.05));box-shadow:inset 0 1px 0 rgba(240,255,255,.2),inset 0 0 0 1px rgba(215,252,253,.14),0 14px 34px -16px rgba(120,230,230,.5)}
+.fm-off{background:rgba(215,252,253,.025);box-shadow:inset 0 0 0 1px rgba(215,252,253,.05);opacity:.5}
+.fm-ctl{border:0;background:transparent;color:var(--text);cursor:pointer;height:36px;min-width:36px;border-radius:999px;display:inline-flex;align-items:center;justify-content:center;gap:8px;font:inherit;font-size:13px;padding:0 10px}
+.fm-ctl:hover{background:rgba(215,252,253,.08)}
+.fm-range{appearance:none;-webkit-appearance:none;height:4px;border-radius:999px;background:rgba(215,252,253,.14);outline:none;flex:1}
+.fm-range::-webkit-slider-thumb{-webkit-appearance:none;width:14px;height:14px;border-radius:999px;background:#d7fcfd;box-shadow:0 0 10px rgba(215,252,253,.7)}
+.fm-range::-moz-range-thumb{width:14px;height:14px;border:0;border-radius:999px;background:#d7fcfd}
+.fm-film .t-cap{font-size:14px;line-height:20px}
+.fm-film .t-meter-fill,.fm-film .t-num-lg,.fm-film .t-num-xl,.fm-film .t-lum,.fm-film .t-tl-item,.fm-film .t-tl-node,.fm-film .t-tl-line{animation:none !important;transition:none !important}

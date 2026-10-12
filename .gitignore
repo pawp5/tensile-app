@@ -1,0 +1,21 @@
+# frontend
+tensile-FE/node_modules
+tensile-FE/dist
+tensile-FE/design-src
+tensile-FE/.env
+
+# backend
+tensile-BE/__pycache__/
+tensile-BE/*.py[cod]
+tensile-BE/.venv/
+tensile-BE/venv/
+tensile-BE/.env
+tensile-BE/*.egg-info/
+tensile-BE/.pytest_cache/
+tensile-BE/.DS_Store
+
+tensile-BE/credentials/
+tensile-BE/images/
+tensile-BE/data/
+tensile-BE/seed_photos/
+tensile-BE/seed_*

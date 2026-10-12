@@ -1,0 +1,15 @@
+/* Tokenize + Inspector additions on top of tensile.css: step states the design has no class for, the drop zone. */
+.t-step-failed::before { background: var(--danger); box-shadow: 0 0 10px rgba(240, 110, 110, .3); }
+.t-step-failed { color: var(--danger-text); }
+.t-step-blocked::before { background: var(--warning); }
+.t-step-blocked { color: var(--warning-text); }
+.t-step[aria-disabled='true'] { cursor: default; opacity: .55; }
+.tk-step-sel .t-step-l { color: var(--text); text-decoration: underline; text-decoration-color: var(--brand-border); text-underline-offset: 6px; }
+
+.tk-drop { border: 1.5px dashed var(--border-strong); border-radius: 18px; padding: 32px; display: flex; flex-direction: column; align-items: center; gap: 8px; background: var(--bg-sunken); transition: border-color var(--d-fast) ease, background var(--d-fast) ease; }
+.tk-drop[data-over='true'] { border-color: var(--brand); background: var(--brand-subtle); }
+.tk-drop[aria-disabled='true'] { opacity: .6; }
+.tk-link { border: 0; padding: 0; background: none; color: var(--brand); font: inherit; cursor: pointer; text-decoration: underline; text-underline-offset: 3px; }
+.tk-link:disabled { color: var(--text-disabled); cursor: default; }
+.tk-row-link { border: 0; padding: 0; background: none; color: inherit; font: inherit; text-align: left; cursor: pointer; }
+.tk-row-link:hover { color: var(--brand); }

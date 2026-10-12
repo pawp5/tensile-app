@@ -1,0 +1,26 @@
+{
+  "10143": {
+    "name": "Monad Testnet",
+    "shortName": "monad-testnet",
+    "testnet": true,
+    "nativeCurrency": { "name": "Monad", "symbol": "MON", "decimals": 18 },
+    "rpcUrl": "https://testnet-rpc.monad.xyz",
+    "explorerUrl": "https://testnet.monadexplorer.com",
+    "deployBlock": 69723619,
+    "logsBlockRange": 100,
+    "confirmations": 2,
+    "enabled": true
+  },
+  "11155111": {
+    "name": "Sepolia",
+    "shortName": "sepolia",
+    "testnet": true,
+    "nativeCurrency": { "name": "Sepolia Ether", "symbol": "ETH", "decimals": 18 },
+    "rpcUrl": "https://ethereum-sepolia-rpc.publicnode.com",
+    "explorerUrl": "https://sepolia.etherscan.io",
+    "deployBlock": 11882585,
+    "logsBlockRange": 1000,
+    "confirmations": 3,
+    "enabled": true
+  }
+}

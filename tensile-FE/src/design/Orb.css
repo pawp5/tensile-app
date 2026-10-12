@@ -1,0 +1,17 @@
+body{margin:0}
+@keyframes orb-breathe{0%,100%{opacity:.85;transform:scale(1)}50%{opacity:1;transform:scale(1.03)}}
+@keyframes orb-pulse{0%,100%{opacity:.18}50%{opacity:.5}}
+@keyframes orb-dash{to{stroke-dashoffset:-28}}
+@keyframes orb-dash-rev{to{stroke-dashoffset:28}}
+@keyframes orb-card-a{from{opacity:0;transform:translateX(-12px) scale(.98);filter:blur(8px)}to{opacity:1;transform:none;filter:blur(0)}}
+@keyframes orb-card-b{from{opacity:0;transform:translateX(-12px) scale(.98);filter:blur(8px)}to{opacity:1;transform:none;filter:blur(0)}}
+.orb-atmo{animation:orb-breathe 9s ease-in-out infinite}
+.orb-halo{animation:orb-pulse 3.2s ease-in-out infinite}
+.orb-flow{stroke-dasharray:3 4;animation:orb-dash 1.6s linear infinite}
+.orb-flow-rev{stroke-dasharray:3 4;animation:orb-dash-rev 1.6s linear infinite}
+.orb-card-a{animation:orb-card-a .6s cubic-bezier(.22,1,.36,1) both}
+.orb-card-b{animation:orb-card-b .6s cubic-bezier(.22,1,.36,1) both}
+.orb-step{transition:opacity .5s cubic-bezier(.22,1,.36,1),color .5s ease}
+.orb-step-dot{transition:background .5s ease,box-shadow .5s ease}
+.orb-pt{cursor:pointer}
+@media (prefers-reduced-motion:reduce){.orb-atmo,.orb-halo,.orb-flow,.orb-flow-rev,.orb-card-a,.orb-card-b{animation:none !important}}

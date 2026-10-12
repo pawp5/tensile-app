@@ -1,0 +1,27 @@
+{
+  "materials": {
+    "CU-CATH-A": { "name": "Copper cathode, Grade A", "symbol": "CU", "family": "Copper cathode", "grade": "Grade A · Cu ≥ 99.9935%" },
+    "AL-P1020": { "name": "Aluminium ingot P1020", "symbol": "AL", "family": "Aluminium ingot", "grade": "P1020A · Al ≥ 99.7%" },
+    "NI-BRQ": { "name": "Nickel briquette", "symbol": "NI", "family": "Nickel briquette", "grade": "Ni ≥ 99.8%" },
+    "ZN-SHG": { "name": "Zinc SHG", "symbol": "ZN", "family": "Zinc", "grade": "Special high grade" },
+    "REBAR-B500B-12MM": { "name": "Rebar B500B, 12 mm", "symbol": "RB", "family": "Steel rebar", "grade": "B500B · 12 mm" }
+  },
+  "pricesUsdPerTonne": {
+    "CU-CATH-A": { "EUROPE": 10000, "AFRICA": 9900 },
+    "AL-P1020": { "EUROPE": 2600, "ASIA": 2550 },
+    "NI-BRQ": { "ASIA": 16500 },
+    "ZN-SHG": { "AMERICAS": 2900 },
+    "REBAR-B500B-12MM": { "NG-LAGOS": 600 }
+  },
+  "warehouses": [
+    { "code": "RTM-BOT-04", "name": "Rotterdam Botlek 04", "operator": "Portline Warehousing", "region": "EUROPE", "country": "NL", "place": "Europe · Netherlands", "lat": 51.88, "lon": 4.31, "reserveKg": 500000, "materials": ["CU-CATH-A"] },
+    { "code": "ANR-DEL-03", "name": "Antwerp Deurganck 03", "operator": "Scheldt Bonded NV", "region": "EUROPE", "country": "BE", "place": "Europe · Belgium", "lat": 51.22, "lon": 4.40, "reserveKg": 1280000, "materials": ["AL-P1020"] },
+    { "code": "SIN-JUR-01", "name": "Singapore Jurong 01", "operator": "Jurong Bonded Logistics", "region": "ASIA", "country": "SG", "place": "Asia · Singapore", "lat": 1.33, "lon": 103.70, "reserveKg": 620000, "materials": ["NI-BRQ"] },
+    { "code": "PKL-WST-02", "name": "Port Klang West 02", "operator": "Straits Bonded Storage", "region": "ASIA", "country": "MY", "place": "Asia · Malaysia", "lat": 3.00, "lon": 101.39, "reserveKg": 250000, "materials": ["AL-P1020"] },
+    { "code": "HOU-SHP-05", "name": "Houston Ship Channel 05", "operator": "Gulfside Terminals", "region": "AMERICAS", "country": "US", "place": "Americas · United States", "lat": 29.73, "lon": -95.27, "reserveKg": 900000, "materials": ["ZN-SHG"] },
+    { "code": "DUR-BAY-01", "name": "Durban Bayhead 01", "operator": "Bayhead Terminals", "region": "AFRICA", "country": "ZA", "place": "Africa · South Africa", "lat": -29.88, "lon": 31.03, "reserveKg": 780000, "materials": ["CU-CATH-A"] },
+    { "code": "LOS-APA-01", "name": "Lagos Apapa 01", "operator": "Apapa Bonded Terminals", "region": "NG-LAGOS", "country": "NG", "place": "Africa · Nigeria", "lat": 6.45, "lon": 3.36, "reserveKg": 1000000, "materials": ["REBAR-B500B-12MM"] }
+  ],
+  "classDefaults": { "lltv": "770000000000000000", "routerMaxLtvBps": 6500, "maxAttestationAgeDays": 30, "vaultCapUsdc": 5000000 },
+  "identityDefaults": { "country": "NG", "tier": 2, "validDays": 365 }
+}

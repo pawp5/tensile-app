@@ -1,0 +1,4 @@
+body{margin:0}
+.ops-mod{display:flex;align-items:center;justify-content:space-between;gap:8px;height:34px;padding:0 10px;border-radius:4px;border:0;background:transparent;color:var(--text-secondary);font-size:13px;cursor:pointer;text-align:left;width:100%}
+.ops-mod:hover{background:var(--surface-hover);color:var(--text)}
+.ops-wrap th{white-space:normal;line-height:14px;padding-top:10px;padding-bottom:10px}
